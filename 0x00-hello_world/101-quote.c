@@ -1,12 +1,12 @@
-#include <unistd.h>
+#include <stdio>
+#include <unistd.h>
 /**
- * * main - Entry point
- *  *
- *   * Return: Always 1 (Success)
- *    **/
+ * main - Entry point
+ *
+ * Return: Always 1 (Sucess)
+ */
 int main(void)
 {
-	        char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	                        write(2, str1, 59);
-	                                return (1);
+	write(1,"and that piece of art is useful\"-Dora Kopar, 2015-10-19\n",59);
+	return (1);
 }
