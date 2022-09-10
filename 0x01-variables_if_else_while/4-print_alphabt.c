@@ -1,21 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 /**
- * main - To print the alphabets without q and e.
+ * main - program that prints the alphabets in lowercase followed by a new line, except e and q.
  *
  * Return: Always 0 (Success)
  **/
 int main(void)
 {
-	int i;
+	char ch = 'a';
 
-	for (i = 97; i < 123; i++)
+	while (ch <= 'z')
 	{
-		if (i != 101 && i != 133)
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(i);
+			putchar(ch);
 		}
+		ch++;
 	}
 	putchar('\n');
 	return (0);
