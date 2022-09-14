@@ -2,7 +2,7 @@
 /**
  * print_to_98 - Prints all natural numbers from input to 98,
  * in order seperated by a comma followed by a space.
- * @n: Tje number to begin countinf at.
+ * @n: The number to begin countinf at.
  */
 void print_to_98(int n)
 {
@@ -16,6 +16,6 @@ void print_to_98(int n)
 	{
 		while (n < 98)
 			printf("%d, ", n++);
-		printf("%d\n, n);
+		printf("%d\n", n);
 	}
 }
