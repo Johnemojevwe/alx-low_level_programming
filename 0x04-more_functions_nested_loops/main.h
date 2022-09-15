@@ -3,8 +3,7 @@
  * _putchar - writes the character c to the stdout
  * @c: The character to print
  *
- * Return: on success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 or 0
  */
 int _putchar(char c);
 int _isupper(int c);
