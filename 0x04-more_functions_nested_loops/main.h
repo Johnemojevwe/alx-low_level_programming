@@ -1,10 +1,9 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
 #include <unistd.h>
-/**
- * _putchar - writes the character c to the stdout
- * @c: The character to print
- *
- * Return: 1 or 0
- */
+
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
@@ -16,3 +15,6 @@ void print_line(imt n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
+void print_number(int n);
+
+#endif /* MAIN_H */
