@@ -1,20 +1,30 @@
 #include "main.h"
 /**
- * _strchr - this function locates a character
+ * _strpbrk - this function gets the legth in bytes
  *
  * @s: string
- * @c: charachter to find
+ * @accept: charachter to find
  *
  * Return: dest
  */
 
-char *_strchr(char *s, char c)
+char *_strpbrk(char *s, char *accept)
 {
-	do {
-		if (*s == c)
+	int i = 0;
+	int x = 0;
+
+	while (s[i] != '\0')
+	{
+		while (accept[x] != '\0')
 		{
-			return ((char *)s);
+			if (s[i] == accept[x])
+			{
+				return (s + i);
+			}
+			x++;
 		}
-	} while (*s++);
+		i++;
+		x = 0;
+	}
 	return (0);
 }
