@@ -1,20 +1,38 @@
 #include "main.h"
 /**
- * _strchr - this function locates a character
+ * _strspn - this function gets the legth in bytes
  *
  * @s: string
- * @c: charachter to find
+ * @accept: charachter to find
  *
  * Return: dest
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	do {
-		if (*s == c)
+	int i;
+	int x;
+	int z = 0;
+	int b = 0;
+
+	while (accept[z] != '\0')
+	{
+		z++;
+	}
+	for (i = 0; i <= z; i++)
+	{
+		for (x = 0; accept[x] != '\0'; x++)
 		{
-			return ((char *)s);
+			if (s[i] == accept[x])
+			{
+				b++;
+				break;
+			}
 		}
-	} while (*s++);
-	return (0);
+		if (accept[x] == '\0')
+		{
+			break;
+		}
+	}
+	return (i);
 }
