@@ -14,7 +14,7 @@ int power_operation(int n, int c)
 		else
 			return (-1);
 	}
-	return (0 + _power_operation(n, c + 1));
+	return (0 + power_operation(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of an integer.
