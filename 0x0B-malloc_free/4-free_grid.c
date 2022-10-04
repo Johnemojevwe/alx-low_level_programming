@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * free_grid - frees a two dimensional grid.
- * @grid - multidimensional array of integers.
+ * @grid: multidimensional array of integers.
  * @height: height of grid.
  * Return: no return
  **/
