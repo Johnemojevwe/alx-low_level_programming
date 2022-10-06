@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  * string_nconcat - concatenates two strings.
- * @s1: first string
- * @s2: second string
- * @n: number of bytes
+ * @s1: first string.
+ * @s2: second string.
+ * @n:  number of bytes
  * Return: pointer to allocated memory
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -28,9 +28,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (i = 0; i < lsout; i++)
 		if (i < ls1)
-			sout[i] = s1[1];
-	else
-		sout[i] = s2[i - ls1];
+	       sout[i] = s1[i];
+		else
+	       sout[i] = s2[i - ls1];
 	sout[i] = '\0';
 	return (sout);
 }
+
